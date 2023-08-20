@@ -1,0 +1,298 @@
+dsdt.dsl    257:     Method (MCTH, 2, NotSerialized)
+Remark   2120 -                ^ Control Method should be made Serialized due to creation of named objects within (\MCTH)
+
+dsdt.dsl    265:         Name (BUF0, Buffer (Local0){})
+Remark   2173 -                  ^ Creation of named objects within a method is highly inefficient, use globals or method local variables instead (\MCTH)
+
+dsdt.dsl    266:         Name (BUF1, Buffer (Local0){})
+Remark   2173 -                  ^ Creation of named objects within a method is highly inefficient, use globals or method local variables instead (\MCTH)
+
+dsdt.dsl    486:         PEWS = PEWS /* \PEWS */
+Warning  3023 -            ^ Duplicate value in list (Source is the same as Target)
+
+dsdt.dsl    511:         PEWS = PEWS /* \PEWS */
+Warning  3023 -            ^ Duplicate value in list (Source is the same as Target)
+
+dsdt.dsl   1712:         Device (PCI0)
+Warning  3073 -     Multiple types ^  (Device object requires either a _HID or _ADR, but not both)
+
+dsdt.dsl   2178:                 Name (SUPP, Zero)
+Remark   2173 -                          ^ Creation of named objects within a method is highly inefficient, use globals or method local variables instead (\_SB.PCI0._OSC)
+
+dsdt.dsl   2238:             Method (NAPE, 0, NotSerialized)
+Remark   2120 -                        ^ Control Method should be made Serialized due to creation of named objects within (\_SB.PCI0.NAPE)
+
+dsdt.dsl   2243:                 OperationRegion (VARM, SystemMemory, Local0, 0x08)
+Remark   2173 -                                     ^ Creation of named objects within a method is highly inefficient, use globals or method local variables instead (\_SB.PCI0.NAPE)
+
+dsdt.dsl   2639:                                 Divide ((Arg0 * 0xFF), 0x64, Local1, Local0)
+Warning  3144 -                                Method Local is set but never used ^  (Local1)
+
+dsdt.dsl   2676:                 Device (APSP)
+Warning  3073 -             Multiple types ^  (Device object requires either a _HID or _ADR, but not both)
+
+dsdt.dsl   3257:                             Method (RRIO, 4, NotSerialized)
+Remark   2146 -          Method Argument is never used ^  (Arg0)
+
+dsdt.dsl   3257:                             Method (RRIO, 4, NotSerialized)
+Remark   2146 -          Method Argument is never used ^  (Arg1)
+
+dsdt.dsl   3257:                             Method (RRIO, 4, NotSerialized)
+Remark   2146 -          Method Argument is never used ^  (Arg2)
+
+dsdt.dsl   3257:                             Method (RRIO, 4, NotSerialized)
+Remark   2146 -          Method Argument is never used ^  (Arg3)
+
+dsdt.dsl   3262:                             Method (RDMA, 3, NotSerialized)
+Remark   2146 -          Method Argument is never used ^  (Arg0)
+
+dsdt.dsl   3262:                             Method (RDMA, 3, NotSerialized)
+Remark   2146 -          Method Argument is never used ^  (Arg1)
+
+dsdt.dsl   3262:                             Method (RDMA, 3, NotSerialized)
+Remark   2146 -          Method Argument is never used ^  (Arg2)
+
+dsdt.dsl   3421:             Local1 = PD64 /* \_SB_.PD64 */
+Warning  3144 -                  ^ Method Local is set but never used (Local1)
+
+dsdt.dsl   3684:                 CreateWordField (Arg0, One, IRA)
+Remark   2089 -                      Object is not referenced ^  (Name [IRA_] is within a method [_SRS])
+
+dsdt.dsl   3831:         Name (BUF0, Buffer (Local0){})
+Remark   2173 -                  ^ Creation of named objects within a method is highly inefficient, use globals or method local variables instead (\SEQL)
+
+dsdt.dsl   3833:         Name (BUF1, Buffer (Local0){})
+Remark   2173 -                  ^ Creation of named objects within a method is highly inefficient, use globals or method local variables instead (\SEQL)
+
+dsdt.dsl   3937:             ElseIf (CondRefOf (\_OS, Local0))
+Warning  3144 -        Method Local is set but never used ^  (Local0)
+
+dsdt.dsl   4004:         Method (_CRS, 0, NotSerialized)  // _CRS: Current Resource Settings
+Remark   2120 -                    ^ Control Method should be made Serialized due to creation of named objects within (\HPET._CRS)
+
+dsdt.dsl   4006:             Name (BUF0, ResourceTemplate ()
+Remark   2173 -                      ^ Creation of named objects within a method is highly inefficient, use globals or method local variables instead (\HPET._CRS)
+
+dsdt.dsl   4301:             OperationRegion (ADCR, SystemMemory, Local0, 0x02)
+Remark   2173 -                                 ^ Creation of named objects within a method is highly inefficient, use globals or method local variables instead (\_SB.SRAD)
+
+dsdt.dsl   4326:             OperationRegion (ADCR, SystemMemory, Local0, 0x02)
+Remark   2173 -                                 ^ Creation of named objects within a method is highly inefficient, use globals or method local variables instead (\_SB.DSAD)
+
+dsdt.dsl   4368:             Local3 = (One << Arg0)
+Warning  3144 -                  ^ Method Local is set but never used (Local3)
+
+dsdt.dsl   4371:             OperationRegion (ADCR, SystemMemory, Local0, 0x02)
+Remark   2173 -                                 ^ Creation of named objects within a method is highly inefficient, use globals or method local variables instead (\_SB.HSAD)
+
+dsdt.dsl   4468:             Method (_CRS, 0, NotSerialized)  // _CRS: Current Resource Settings
+Remark   2120 -                        ^ Control Method should be made Serialized due to creation of named objects within (\_SB.HFP1._CRS)
+
+dsdt.dsl   4470:                 Name (RBUF, ResourceTemplate ()
+Remark   2173 -                          ^ Creation of named objects within a method is highly inefficient, use globals or method local variables instead (\_SB.HFP1._CRS)
+
+dsdt.dsl   4497:             Method (_CRS, 0, NotSerialized)  // _CRS: Current Resource Settings
+Remark   2120 -                        ^ Control Method should be made Serialized due to creation of named objects within (\_SB.HID0._CRS)
+
+dsdt.dsl   4499:                 Name (RBUF, ResourceTemplate ()
+Remark   2173 -                          ^ Creation of named objects within a method is highly inefficient, use globals or method local variables instead (\_SB.HID0._CRS)
+
+dsdt.dsl   4532:             Method (_CRS, 0, NotSerialized)  // _CRS: Current Resource Settings
+Remark   2120 -                        ^ Control Method should be made Serialized due to creation of named objects within (\_SB.HID2._CRS)
+
+dsdt.dsl   4534:                 Name (RBUF, ResourceTemplate ()
+Remark   2173 -                          ^ Creation of named objects within a method is highly inefficient, use globals or method local variables instead (\_SB.HID2._CRS)
+
+dsdt.dsl   4556:             Method (_CRS, 0, NotSerialized)  // _CRS: Current Resource Settings
+Remark   2120 -                        ^ Control Method should be made Serialized due to creation of named objects within (\_SB.GPIO._CRS)
+
+dsdt.dsl   4558:                 Name (RBUF, ResourceTemplate ()
+Remark   2173 -                          ^ Creation of named objects within a method is highly inefficient, use globals or method local variables instead (\_SB.GPIO._CRS)
+
+dsdt.dsl   4609:                 Name (BUF0, ResourceTemplate ()
+Remark   2173 -                          ^ Creation of named objects within a method is highly inefficient, use globals or method local variables instead (\_SB.FUR0._CRS)
+
+dsdt.dsl   4624:                 CreateWordField (BUF0, \_SB.FUR0._CRS._Y19._INT, IRQW)  // _INT: Interrupts
+Warning  3128 -                                 ResourceTag larger than Field ^  (Size mismatch, Tag: 32 bits, Field: 16 bits)
+
+dsdt.dsl   4696:                 Name (BUF0, ResourceTemplate ()
+Remark   2173 -                          ^ Creation of named objects within a method is highly inefficient, use globals or method local variables instead (\_SB.FUR1._CRS)
+
+dsdt.dsl   4711:                 CreateWordField (BUF0, \_SB.FUR1._CRS._Y1A._INT, IRQW)  // _INT: Interrupts
+Warning  3128 -                                 ResourceTag larger than Field ^  (Size mismatch, Tag: 32 bits, Field: 16 bits)
+
+dsdt.dsl   4783:                 Name (BUF0, ResourceTemplate ()
+Remark   2173 -                          ^ Creation of named objects within a method is highly inefficient, use globals or method local variables instead (\_SB.FUR2._CRS)
+
+dsdt.dsl   4798:                 CreateWordField (BUF0, \_SB.FUR2._CRS._Y1B._INT, IRQW)  // _INT: Interrupts
+Warning  3128 -                                 ResourceTag larger than Field ^  (Size mismatch, Tag: 32 bits, Field: 16 bits)
+
+dsdt.dsl   4870:                 Name (BUF0, ResourceTemplate ()
+Remark   2173 -                          ^ Creation of named objects within a method is highly inefficient, use globals or method local variables instead (\_SB.FUR3._CRS)
+
+dsdt.dsl   4885:                 CreateWordField (BUF0, \_SB.FUR3._CRS._Y1C._INT, IRQW)  // _INT: Interrupts
+Warning  3128 -                                 ResourceTag larger than Field ^  (Size mismatch, Tag: 32 bits, Field: 16 bits)
+
+dsdt.dsl   4948:                 Name (BUF0, ResourceTemplate ()
+Remark   2173 -                          ^ Creation of named objects within a method is highly inefficient, use globals or method local variables instead (\_SB.FUR4._CRS)
+
+dsdt.dsl   4963:                 CreateByteField (BUF0, \_SB.FUR4._CRS._Y1D._INT, IRQB)  // _INT: Interrupts
+Warning  3128 -                                 ResourceTag larger than Field ^  (Size mismatch, Tag: 32 bits, Field: 8 bits)
+
+dsdt.dsl   5022:                 Name (BUF0, ResourceTemplate ()
+Remark   2173 -                          ^ Creation of named objects within a method is highly inefficient, use globals or method local variables instead (\_SB.I2CA._CRS)
+
+dsdt.dsl   5053:             Method (_DSM, 4, Serialized)  // _DSM: Device-Specific Method
+Warning  3115 -                        ^ Not all control paths return a value (\_SB.I2CA._DSM)
+
+dsdt.dsl   5053:             Method (_DSM, 4, Serialized)  // _DSM: Device-Specific Method
+Warning  3107 -                        ^ Reserved method must return a value (Integer/String/Buffer/Package/Reference required for _DSM)
+
+dsdt.dsl   5055:                 If ((Arg0 == ToUUID ("d93e4d1c-58bb-493c-a06a-605a717f9e2e") /* Unknown UUID */))
+Remark   2184 -                                                       Unknown UUID string ^ 
+
+dsdt.dsl   5125:                 Name (BUF0, ResourceTemplate ()
+Remark   2173 -                          ^ Creation of named objects within a method is highly inefficient, use globals or method local variables instead (\_SB.I2CB._CRS)
+
+dsdt.dsl   5156:             Method (_DSM, 4, Serialized)  // _DSM: Device-Specific Method
+Warning  3115 -                        ^ Not all control paths return a value (\_SB.I2CB._DSM)
+
+dsdt.dsl   5156:             Method (_DSM, 4, Serialized)  // _DSM: Device-Specific Method
+Warning  3107 -                        ^ Reserved method must return a value (Integer/String/Buffer/Package/Reference required for _DSM)
+
+dsdt.dsl   5158:                 If ((Arg0 == ToUUID ("d93e4d1c-58bb-493c-a06a-605a717f9e2e") /* Unknown UUID */))
+Remark   2184 -                                                       Unknown UUID string ^ 
+
+dsdt.dsl   5228:                 Name (BUF0, ResourceTemplate ()
+Remark   2173 -                          ^ Creation of named objects within a method is highly inefficient, use globals or method local variables instead (\_SB.I2CC._CRS)
+
+dsdt.dsl   5259:             Method (_DSM, 4, Serialized)  // _DSM: Device-Specific Method
+Warning  3115 -                        ^ Not all control paths return a value (\_SB.I2CC._DSM)
+
+dsdt.dsl   5259:             Method (_DSM, 4, Serialized)  // _DSM: Device-Specific Method
+Warning  3107 -                        ^ Reserved method must return a value (Integer/String/Buffer/Package/Reference required for _DSM)
+
+dsdt.dsl   5261:                 If ((Arg0 == ToUUID ("d93e4d1c-58bb-493c-a06a-605a717f9e2e") /* Unknown UUID */))
+Remark   2184 -                                                       Unknown UUID string ^ 
+
+dsdt.dsl   5331:                 Name (BUF0, ResourceTemplate ()
+Remark   2173 -                          ^ Creation of named objects within a method is highly inefficient, use globals or method local variables instead (\_SB.I2CD._CRS)
+
+dsdt.dsl   5362:             Method (_DSM, 4, Serialized)  // _DSM: Device-Specific Method
+Warning  3115 -                        ^ Not all control paths return a value (\_SB.I2CD._DSM)
+
+dsdt.dsl   5362:             Method (_DSM, 4, Serialized)  // _DSM: Device-Specific Method
+Warning  3107 -                        ^ Reserved method must return a value (Integer/String/Buffer/Package/Reference required for _DSM)
+
+dsdt.dsl   5364:                 If ((Arg0 == ToUUID ("d93e4d1c-58bb-493c-a06a-605a717f9e2e") /* Unknown UUID */))
+Remark   2184 -                                                       Unknown UUID string ^ 
+
+dsdt.dsl   5447:                 Name (BUF0, ResourceTemplate ()
+Remark   2173 -                          ^ Creation of named objects within a method is highly inefficient, use globals or method local variables instead (\_SB.I3CA._CRS)
+
+dsdt.dsl   5529:                 Name (BUF0, ResourceTemplate ()
+Remark   2173 -                          ^ Creation of named objects within a method is highly inefficient, use globals or method local variables instead (\_SB.I3CB._CRS)
+
+dsdt.dsl   5611:                 Name (BUF0, ResourceTemplate ()
+Remark   2173 -                          ^ Creation of named objects within a method is highly inefficient, use globals or method local variables instead (\_SB.I3CC._CRS)
+
+dsdt.dsl   5693:                 Name (BUF0, ResourceTemplate ()
+Remark   2173 -                          ^ Creation of named objects within a method is highly inefficient, use globals or method local variables instead (\_SB.I3CD._CRS)
+
+dsdt.dsl   5785:                 Name (BUF0, ResourceTemplate ()
+Remark   2173 -                          ^ Creation of named objects within a method is highly inefficient, use globals or method local variables instead (\_SB.PCI0.UAR1._CRS)
+
+dsdt.dsl   5796:                 CreateByteField (BUF0, \_SB.PCI0.UAR1._CRS._Y1E._MIN, IOLO)  // _MIN: Minimum Base Address
+Warning  3128 -                                      ResourceTag larger than Field ^  (Size mismatch, Tag: 16 bits, Field: 8 bits)
+
+dsdt.dsl   5798:                 CreateByteField (BUF0, \_SB.PCI0.UAR1._CRS._Y1E._MAX, IORL)  // _MAX: Maximum Base Address
+Warning  3128 -                                      ResourceTag larger than Field ^  (Size mismatch, Tag: 16 bits, Field: 8 bits)
+
+dsdt.dsl   5864:                 Name (BUF0, ResourceTemplate ()
+Remark   2173 -                          ^ Creation of named objects within a method is highly inefficient, use globals or method local variables instead (\_SB.PCI0.UAR2._CRS)
+
+dsdt.dsl   5875:                 CreateByteField (BUF0, \_SB.PCI0.UAR2._CRS._Y20._MIN, IOLO)  // _MIN: Minimum Base Address
+Warning  3128 -                                      ResourceTag larger than Field ^  (Size mismatch, Tag: 16 bits, Field: 8 bits)
+
+dsdt.dsl   5877:                 CreateByteField (BUF0, \_SB.PCI0.UAR2._CRS._Y20._MAX, IORL)  // _MAX: Maximum Base Address
+Warning  3128 -                                      ResourceTag larger than Field ^  (Size mismatch, Tag: 16 bits, Field: 8 bits)
+
+dsdt.dsl   5943:                 Name (BUF0, ResourceTemplate ()
+Remark   2173 -                          ^ Creation of named objects within a method is highly inefficient, use globals or method local variables instead (\_SB.PCI0.UAR3._CRS)
+
+dsdt.dsl   5954:                 CreateByteField (BUF0, \_SB.PCI0.UAR3._CRS._Y22._MIN, IOLO)  // _MIN: Minimum Base Address
+Warning  3128 -                                      ResourceTag larger than Field ^  (Size mismatch, Tag: 16 bits, Field: 8 bits)
+
+dsdt.dsl   5956:                 CreateByteField (BUF0, \_SB.PCI0.UAR3._CRS._Y22._MAX, IORL)  // _MAX: Maximum Base Address
+Warning  3128 -                                      ResourceTag larger than Field ^  (Size mismatch, Tag: 16 bits, Field: 8 bits)
+
+dsdt.dsl   6022:                 Name (BUF0, ResourceTemplate ()
+Remark   2173 -                          ^ Creation of named objects within a method is highly inefficient, use globals or method local variables instead (\_SB.PCI0.UAR4._CRS)
+
+dsdt.dsl   6033:                 CreateByteField (BUF0, \_SB.PCI0.UAR4._CRS._Y24._MIN, IOLO)  // _MIN: Minimum Base Address
+Warning  3128 -                                      ResourceTag larger than Field ^  (Size mismatch, Tag: 16 bits, Field: 8 bits)
+
+dsdt.dsl   6035:                 CreateByteField (BUF0, \_SB.PCI0.UAR4._CRS._Y24._MAX, IORL)  // _MAX: Maximum Base Address
+Warning  3128 -                                      ResourceTag larger than Field ^  (Size mismatch, Tag: 16 bits, Field: 8 bits)
+
+dsdt.dsl   6078:     Device (_SB.TPM)
+Warning  3141 -                   ^ Missing dependency (Device has a _SRS, missing a _PRS, required)
+
+dsdt.dsl   6078:     Device (_SB.TPM)
+Remark   2141 -                   ^ Missing dependency (Device has a _SRS, no corresponding _DIS)
+
+dsdt.dsl   6216:                         CreateBitField (CREI, \_SB.TPM._Y2A._POL, LLVL)  // _POL: Polarity
+Warning  3128 -                                  ResourceTag larger than Field ^  (Size mismatch, Tag: 2 bits, Field: 1 bit)
+
+dsdt.dsl   6266:                     CreateBitField (CREI, \_SB.TPM._Y2A._POL, LLVL)  // _POL: Polarity
+Warning  3128 -                              ResourceTag larger than Field ^  (Size mismatch, Tag: 2 bits, Field: 1 bit)
+
+dsdt.dsl   6335:         Method (STRT, 3, Serialized)
+Remark   2146 -                    ^ Method Argument is never used (Arg2)
+
+dsdt.dsl   6337:             OperationRegion (TPMR, SystemMemory, FTPM, 0x1000)
+Remark   2173 -                                 ^ Creation of named objects within a method is highly inefficient, use globals or method local variables instead (\_SB.TPM.STRT)
+
+dsdt.dsl   6346:             Name (TIMR, Zero)
+Remark   2173 -                      ^ Creation of named objects within a method is highly inefficient, use globals or method local variables instead (\_SB.TPM.STRT)
+
+dsdt.dsl   6390:         Method (CRYF, 3, Serialized)
+Remark   2146 -                    ^ Method Argument is never used (Arg2)
+
+dsdt.dsl   6404:                     Name (TPMV, Package (0x02)
+Remark   2173 -                              ^ Creation of named objects within a method is highly inefficient, use globals or method local variables instead (\_SB.TPM.CRYF)
+
+dsdt.dsl   6489:                         Name (PPI1, Package (0x02)
+Remark   2173 -                                  ^ Creation of named objects within a method is highly inefficient, use globals or method local variables instead (\_SB.TPM._DSM)
+
+dsdt.dsl   6503:                         Name (PPI2, Package (0x03)
+Remark   2173 -                                  ^ Creation of named objects within a method is highly inefficient, use globals or method local variables instead (\_SB.TPM._DSM)
+
+dsdt.dsl   6550:             ElseIf ((Arg0 == ToUUID ("376054ed-cc13-4675-901c-4756d7f2d45d") /* Unknown UUID */))
+Remark   2184 -                                                       Unknown UUID string ^ 
+
+dsdt.dsl   6577:             If ((Arg0 == ToUUID ("cf8e16a5-c1e8-4e25-b712-4f54a96702c8") /* Unknown UUID */))
+Remark   2184 -                                                   Unknown UUID string ^ 
+
+dsdt.dsl   6582:             If ((Arg0 == ToUUID ("6bbf6cab-5463-4714-b7cd-f0203c0368d4") /* Unknown UUID */))
+Remark   2184 -                                                   Unknown UUID string ^ 
+
+dsdt.dsl   7015:             Method (_CRS, 0, NotSerialized)  // _CRS: Current Resource Settings
+Remark   2120 -                        ^ Control Method should be made Serialized due to creation of named objects within (\_SB.PCI0.SBRG.EC0._CRS)
+
+dsdt.dsl   7017:                 Name (BUF0, ResourceTemplate ()
+Remark   2173 -                          ^ Creation of named objects within a method is highly inefficient, use globals or method local variables instead (\_SB.PCI0.SBRG.EC0._CRS)
+
+dsdt.dsl   7032:                 Name (BUF1, ResourceTemplate ()
+Remark   2173 -                          ^ Creation of named objects within a method is highly inefficient, use globals or method local variables instead (\_SB.PCI0.SBRG.EC0._CRS)
+
+
+Intel ACPI Component Architecture
+ASL+ Optimizing Compiler/Disassembler version 20221020
+Copyright (c) 2000 - 2022 Intel Corporation
+
+ASL Input:     dsdt.dsl -  216870 bytes   2637 keywords      0 source lines
+AML Output:    dsdt.aml -   25434 bytes   1623 opcodes    1014 named objects
+Hex Dump:      dsdt.hex -  238889 bytes
+
+Compilation successful. 0 Errors, 32 Warnings, 64 Remarks, 105 Optimizations

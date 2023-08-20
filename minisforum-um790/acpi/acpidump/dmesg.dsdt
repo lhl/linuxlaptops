@@ -1,0 +1,4 @@
+[    0.002989] ACPI: DSDT 0x000000009180C000 006375 (v02 ALASKA A M I    01072009 INTL 20220331)
+[    0.003032] ACPI: Reserving DSDT table memory at [mem 0x9180c000-0x91812374]
+[    0.304416] ACPI: \_SB_.PCI0.SBRG.EC0_: Boot DSDT EC used to handle transactions
+[    0.358372] ACPI: \_SB_.PCI0.SBRG.EC0_: Boot DSDT EC initialization complete
